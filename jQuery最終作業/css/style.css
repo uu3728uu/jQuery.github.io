@@ -1,0 +1,283 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.container{
+    max-width: 1002px;
+    margin: 0 auto;
+}
+.icon ul{
+        display: flex;
+        justify-content: flex-end;
+        background-color: #f5f4f6;
+    }
+.icon ul a{
+    padding: 5px;
+    text-decoration: none;
+}
+.icon ul li+li{
+    border-left: 1px solid #cdcdcd;
+
+}
+.icon ul a:hover{
+    color: red;
+}
+.icon-t a{
+    color: #69c6da;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.header h1 a{
+    display: block;
+    width: 224px;
+    height: 50px;
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png
+    );
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.menu-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+
+}
+.menu-list li a{
+    display: block;
+    width: 100px;
+    text-decoration: none;
+    text-align: center;
+    color: #85cec3;
+    font-weight: bold;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
+}
+.menu-list a:hover{
+    color: #fff;
+    background: #85cec3;
+}
+.menu-list li{
+    position: relative;
+    display: block;
+}
+.menu-list>li ul{
+    position: absolute;
+    background: #fff;
+    display: none;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+/*下拉式選單
+.menu-list > li:hover ul{
+    display:block;
+}
+*/
+
+/*swiper效果*/
+.swiper {
+    width: 1002px;
+    height: 346px;
+    position: relative;
+  }
+.swiper h2{
+    width: 1002px;
+    position: absolute;
+    z-index: 2;
+    top: 35%;
+    color: #fff;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 25px 45px;
+    background-color: rgba(0, 0, 0, 0.329);
+    line-height: 1.2;
+    box-shadow: 5px 5px 10px rgba(2, 2, 5, 0.404);
+}
+
+.cource{
+    display: flex;
+    margin: 37px 0 0 15px;
+}
+
+.cource-item{
+    margin-right: 23px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 3px 5px rgba(139, 137, 137, 0.897);
+}
+.cource-item h3{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.cource-item p{
+    text-align: justify;
+    line-height: 1.2;
+    padding: 10px 16px 15px 16px;
+}
+.list{
+    list-style-type: disc;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    line-height: 1.2;
+}
+.diff-course{
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cource-content{
+    width: 900px;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+.diff-course h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    padding: 5px 0 17px 0;
+}
+.cource-content th,td{
+    border-top: 1px solid #e6e5e6;
+    border-bottom: 1px solid #e6e5e6;
+    padding: 8px;
+}
+.cource-content th{
+    font-weight: bold;
+    background-color: #f7f5f9;
+}
+.green{
+    color: #669c91;
+}
+.information{
+    background: linear-gradient(#004f44,#007968
+    );
+}
+.information h2{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    color: #fff;
+    padding-top: 25px;
+}
+.form{
+    display: flex;
+    margin-top: 25px;
+    padding-bottom: 22px;
+}
+.form textarea{
+    width: 45%;
+    border-radius: 5px;
+    margin: 0 35px 0 15px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    line-height: 1.5;
+    color: #fff;
+    margin-right: 14px;
+}
+.data input{
+    margin-bottom: 8px;
+    height: 28px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn{
+    width: 50px;
+    color: #fff;
+    background-color: #00ad8e;
+    border: 1px solid #00ad8e;
+    border-radius: 3px;
+    padding: 3px 5px;
+    align-self: flex-end;
+}
+.btn:hover{
+    color: #00ad8e;
+    background-color: #fff;
+}
+.footer{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 11px;
+}    
+.footer ul{
+    line-height: 1.5;
+}
+.footer ul li a{
+    text-decoration: none;
+    color: rgba(189, 39, 126, 0.836);
+}
+.footer a:hover{
+    color: rgb(175, 5, 5);
+    text-decoration: underline;
+}
+.footer a:active{
+    color: rgba(56, 20, 219, 0.486);
+    font-size: 18px;
+}
+
+.toTop a{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 50px;
+    color: palegreen;
+    cursor: pointer;
+}
+.toTop a:hover{
+    color: palevioletred;
+}
